@@ -141,9 +141,42 @@ Output:
 ---
 
 ### 🎨 UI Preview (Screenshots)
-
+---
+[App Demo Video](https://drive.google.com/file/d/1cetIo55U-RsYUklXlExZnyumDGMULOST/view?usp=sharing)
 
 ---
+#### 🏠 Quiz Tab
+<p align="center">
+  <img src="./frontend/src/assets/Screenshot (1).png" alt="Quiz Tab" width="90%"/>
+</p>
+
+---
+
+#### 🧠 History Tab
+<p align="center">
+  <img src="./frontend/src/assets/Screenshot (2).png" alt="History Tab" width="90%"/>
+</p>
+<p align="center">
+  <img src="./frontend/src/assets/Screenshot (3).png" alt="History Tab" width="90%"/>
+</p>
+
+---
+
+#### 🧠 Take Quiz View
+
+<p align="center">
+  <img src="./frontend/src/assets/Screenshot (4).png" alt="Take Quiz View" width="90%"/>
+</p>
+
+---
+#### 🧠 View Answers View
+
+<p align="center">
+  <img src="./frontend/src/assets/Screenshot (5).png" alt="View Answers View" width="90%"/>
+</p>
+
+---
+
 ### 👨‍💻 Developed By
 
 #### Krushnajit Bhavar
