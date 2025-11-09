@@ -1,0 +1,47 @@
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.nav-button {
+  background: transparent;
+  border: 2px solid #7b61ff;
+  color: #7b61ff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #7b61ff;
+  color: white;
+}
+
+.nav-button.active {
+  background-color: #7b61ff;
+  color: white;
+}
+
+.tab-content {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
