@@ -10,9 +10,9 @@ The system scrapes article content, generates structured quiz questions with dif
 _First start backend server by clicking on link_
 
 **Backend (Render) :**
-**https://inventory-management-app-uo9n.onrender.com**
+**https://ai-quiz-generator-z9in.onrender.com**
 
-**Frontend (Vercel) :** **https://inventory-management-app-mauve.vercel.app/products**
+**Frontend (Vercel) :** **https://ai-quiz-generator-omega-vert.vercel.app/**
 
 ## Setup Instructions
 
