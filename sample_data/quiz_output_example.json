@@ -1,0 +1,42 @@
+{
+  "quiz_id": 1,
+  "quiz_data": {
+    "title": "Artificial Intelligence Quiz",
+    "summary": "Artificial intelligence refers to the simulation of human intelligence in machines that are programmed to think and learn.",
+    "questions": [
+      {
+        "question": "What does Artificial Intelligence primarily aim to simulate?",
+        "options": [
+          "Human intelligence",
+          "Animal behavior",
+          "Natural disasters",
+          "Mechanical processes"
+        ],
+        "answer": "Human intelligence",
+        "difficulty": "easy"
+      },
+      {
+        "question": "Which of the following is a common application of AI?",
+        "options": [
+          "Weather forecasting",
+          "Manual bookkeeping",
+          "Typewriting",
+          "Paper filing"
+        ],
+        "answer": "Weather forecasting",
+        "difficulty": "medium"
+      },
+      {
+        "question": "Why is data important in training AI systems?",
+        "options": [
+          "It enables pattern recognition and learning",
+          "It increases hardware speed",
+          "It reduces software size",
+          "It replaces algorithms"
+        ],
+        "answer": "It enables pattern recognition and learning",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}
