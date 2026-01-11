@@ -5,5 +5,5 @@ langchain
 langchain-google-genai
 beautifulsoup4
 requests
-psycopg2-binary
 sqlalchemy
+pymysql
