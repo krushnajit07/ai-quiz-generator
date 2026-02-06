@@ -10,6 +10,7 @@ export default function QuizDisplay({
   const [submitted, setSubmitted] = useState(false);
   const [quizVisible, setQuizVisible] = useState(false);
 
+  // 🔁 Handle mode switching safely
   useEffect(() => {
     if (quizMode) {
       setQuizVisible(true);
@@ -20,7 +21,8 @@ export default function QuizDisplay({
 
     if (revealAnswers) {
       setQuizVisible(true);
-      setSubmitted(true);
+      setSubmitted(false);   // view mode is NOT submitted
+      setUserAnswers({});    // clear previous answers
       return;
     }
 
@@ -84,7 +86,7 @@ export default function QuizDisplay({
               <div
                 key={index}
                 className={`quiz-card ${
-                  submitted
+                  quizMode && submitted
                     ? isCorrect
                       ? "correct-card"
                       : "wrong-card"
@@ -111,10 +113,19 @@ export default function QuizDisplay({
 
                     let optionClass = "option";
 
-                    if (submitted || revealAnswers) {
+                    // 🧠 Quiz mode styling
+                    if (quizMode && submitted) {
                       if (correct) optionClass += " correct";
                       else if (selected) optionClass += " wrong";
-                    } else if (selected) {
+                    }
+
+                    // 👀 View answers mode styling
+                    if (revealAnswers && correct) {
+                      optionClass += " correct";
+                    }
+
+                    // ✨ Selection before submit
+                    if (quizMode && !submitted && selected) {
                       optionClass += " selected";
                     }
 
@@ -138,12 +149,13 @@ export default function QuizDisplay({
                   })}
                 </ul>
 
-                {(submitted || revealAnswers) && question.explanation && (
-                  <p className="explanation">
-                    📝 <strong>Explanation:</strong>{" "}
-                    {question.explanation}
-                  </p>
-                )}
+                {(quizMode && submitted || revealAnswers) &&
+                  question.explanation && (
+                    <p className="explanation">
+                      📝 <strong>Explanation:</strong>{" "}
+                      {question.explanation}
+                    </p>
+                  )}
               </div>
             );
           })}
